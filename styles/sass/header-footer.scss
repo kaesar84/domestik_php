@@ -1,0 +1,31 @@
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+#header,
+#footer {
+  background-color: bootstrap.$dark;
+  color: white;
+  height: 6rem;
+
+  a {
+    color: white;
+    font-size: 1.50rem;
+    img {
+      width: 100px;
+      height: auto;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+
+    }
+  }
+ 
+}
+
+
+#footer{
+    a{
+        font-size: 1rem;
+    }
+}
+#btnReturn{
+    font-size: 0.8rem;
+  }

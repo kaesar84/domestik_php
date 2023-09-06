@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Indice</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../styles/css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,17 @@
 </head>
 
 <body>
+
+    <nav class="navbar" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.php.net/manual/es/intro-whatis.php">
+                <img src="../media/img/logo.png" alt="Logo">
+                Título
+            </a>
+            <button type="button" class="btn btn-light" id="btnReturn">Inicio</button>
+        </div>
+    </nav>
+
 
     <section class="codeSection">
         <nav class="navbar codeHeader">
@@ -26,9 +38,6 @@
                 </a>
             </div>
         </nav>
-
-
-
 
         <!-- TERMINAL   -->
         <div class="container">
@@ -69,6 +78,16 @@
             </div>
         </div>
     </section>
+
+    <nav class="navbar" id="footer">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.php.net/manual/es/intro-whatis.php">
+                PHP Version 8.2.4
+            </a>
+            <button type="button" class="btn btn-light" id="btnReturn">Volver</button>
+        </div>
+    </nav>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
