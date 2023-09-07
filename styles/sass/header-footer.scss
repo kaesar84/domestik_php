@@ -3,29 +3,73 @@
 #header,
 #footer {
   background-color: bootstrap.$dark;
-  color: white;
-  height: 6rem;
+  color: yellow;
+  height: 5rem;
 
   a {
-    color: white;
-    font-size: 1.50rem;
+    color: bootstrap.$pink-400;
+    font-size: 2.25rem;
+    font-weight: 600;
+    // text-transform: uppercase;
+    @media (max-width: 400px) {
+      font-size: 1.5rem;
+    }
     img {
       width: 100px;
       height: auto;
       margin-left: 0.5rem;
       margin-right: 0.5rem;
-
+      align-self: center;
+      @media (max-width: 400px) {
+        width: 70px;
+      }
     }
   }
- 
 }
 
-
-#footer{
-    a{
-        font-size: 1rem;
-    }
+#footer {
+  a {
+    font-size: 1rem;
+    color: white;
+    text-transform: lowercase;
+    top: 100%;
+  }
 }
-#btnReturn{
+#btnReturn {
+  font-size: 1rem;
+  background-color: bootstrap.$dark;
+  border: none;
+  a {
+    width: 100%;
     font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    @media (max-width: 400px) {
+      font-size: 0.6rem;
+    }
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: bootstrap.$pink-400;
+      @media (max-width: 400px) {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
   }
+}
+
+#logoCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sub {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    background-color: red;
+  }
+}

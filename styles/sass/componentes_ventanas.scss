@@ -1,9 +1,10 @@
 @use "../../node_modules/bootstrap/scss/bootstrap";
 
-// Sección código php
+// Sección código php e indice
 .codeSection {
   background-color: bootstrap.$blue-100;
   padding-bottom: 0.5rem;
+  
 
   .codeHeader {
     background-color: #327ac5;
@@ -41,12 +42,24 @@
         font-size: 1.5rem;
         font-weight: 600;
         padding-bottom: 0.5rem;
-        text-transform: uppercase;
+        // text-transform: uppercase;
       }
       p {
         color: bootstrap.$white;
         span {
           color: bootstrap.$blue-400;
+        }
+      }
+      li {
+        color: white;
+        list-style: none;
+
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            color: yellow;
+          }
         }
       }
     }
@@ -93,7 +106,7 @@
         font-size: 1.5rem;
         font-weight: 600;
         padding-bottom: 0.5rem;
-        text-transform: uppercase;
+        // text-transform: uppercase;
       }
       p {
         color: black;
@@ -104,3 +117,29 @@
     }
   }
 }
+
+#acordeonIndice {
+  .accordion-item {
+    border: none;
+    .accordion-header {
+      button {
+        background-color: bootstrap.$gray-900;
+        color: bootstrap.$primary;
+        border: none;
+        &:hover {
+          color: bootstrap.$pink-500;
+        }
+        &:visited {
+          color: bootstrap.$pink-500;
+        }
+      }
+    }
+
+    .accordion-body {
+      background-color: bootstrap.$gray-900;
+      color: bootstrap.$white;
+      border: none;
+    }
+  }
+}
+

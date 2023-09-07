@@ -11886,13 +11886,23 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 0.5rem;
-  text-transform: uppercase;
 }
 .codeSection .codeWindow .codeContent p {
   color: #fff;
 }
 .codeSection .codeWindow .codeContent p span {
   color: #3d8bfd;
+}
+.codeSection .codeWindow .codeContent li {
+  color: white;
+  list-style: none;
+}
+.codeSection .codeWindow .codeContent li a {
+  color: white;
+  text-decoration: none;
+}
+.codeSection .codeWindow .codeContent li a:hover {
+  color: yellow;
 }
 
 .resultSection {
@@ -11930,7 +11940,6 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 0.5rem;
-  text-transform: uppercase;
 }
 .resultSection .resutlWindow .resultContent p {
   color: black;
@@ -11939,16 +11948,43 @@ textarea.form-control-lg {
   color: #479f76;
 }
 
+#acordeonIndice .accordion-item {
+  border: none;
+}
+#acordeonIndice .accordion-item .accordion-header button {
+  background-color: #212529;
+  color: #0d6efd;
+  border: none;
+}
+#acordeonIndice .accordion-item .accordion-header button:hover {
+  color: #d63384;
+}
+#acordeonIndice .accordion-item .accordion-header button:visited {
+  color: #d63384;
+}
+#acordeonIndice .accordion-item .accordion-body {
+  background-color: #212529;
+  color: #fff;
+  border: none;
+}
+
 #header,
 #footer {
   background-color: #212529;
-  color: white;
-  height: 6rem;
+  color: yellow;
+  height: 5rem;
 }
 #header a,
 #footer a {
-  color: white;
-  font-size: 1.5rem;
+  color: #de5c9d;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+@media (max-width: 400px) {
+  #header a,
+  #footer a {
+    font-size: 1.5rem;
+  }
 }
 #header a img,
 #footer a img {
@@ -11956,14 +11992,61 @@ textarea.form-control-lg {
   height: auto;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  align-self: center;
+}
+@media (max-width: 400px) {
+  #header a img,
+  #footer a img {
+    width: 70px;
+  }
 }
 
 #footer a {
   font-size: 1rem;
+  color: white;
+  text-transform: lowercase;
+  top: 100%;
 }
 
 #btnReturn {
+  font-size: 1rem;
+  background-color: #212529;
+  border: none;
+}
+#btnReturn a {
+  width: 100%;
   font-size: 0.8rem;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+@media (max-width: 400px) {
+  #btnReturn a {
+    font-size: 0.6rem;
+  }
+}
+#btnReturn a svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #de5c9d;
+}
+@media (max-width: 400px) {
+  #btnReturn a svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+#logoCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sub .container-fluid {
+  display: flex;
+  align-items: center;
+  background-color: red;
 }
 
 body {
