@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Funciones</title>
+    <title>Depurado de errores</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../styles/css/styles.css">
@@ -18,9 +18,9 @@
 
     <nav class="navbar" id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://php.net/manual/es/language.functions.php">
+            <a class="navbar-brand" href="https://www.php.net/manual/es/intro-whatis.php">
                 <!-- <img src="../media/img/logo.png" alt="Logo"> -->
-                Funciones
+                Depurado de errores
             </a>
             <button type="button" class="btn btn-light" id="btnReturn"><a href="../index.php"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-house-fill" viewBox="0 0 16 16">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
@@ -29,12 +29,6 @@
                     </svg></i></a></button>
         </div>
     </nav>
-
-
-
-
-
-
 
     <section class="codeSection">
         <nav class="navbar codeHeader">
@@ -54,26 +48,30 @@
                 <div class="codeNav">🔴🟡🟢 </div>
                 <div class="codeContent">
 
-                    <h5>// Declaración</h5>
+                    <h5>// Muestra los errores en pantalla</h5>
                     <p>
-                        <span class="spanPhp">&lt;?php</span>
-                        <br>
+                        <span class="spanPhp">&lt;?php</span> <br>
 
-                        <span class="spanFuncion">function fecha()</span>{ <br>
-                        echo ' <br>
-                        - Día: ' . <span class="spanFuncion">date('l')</span> . '&lt;br&gt' <br>
-                        - Mes: ' . <span class="spanFuncion">date('F')</span>. '&lt;br&gt' <br>
-                        - Año: ' . <span class="spanFuncion">date('Y')</span>; <br>
-                        } <br>
+                        <span class="spanFuncion">error_reporting(E_ALL)</span>; <br>
+                        <span class="spanFuncion"> ini_set('display_errors',1);</span>
+                        <span class="spanComentario">// 1(true) -> muestra errores</span>
+
                     </p>
 
-                    <h5>// Llamada a la función</h5>
+                    <h5>// Error forzado, información por pantalla</h5>
                     <p>
-                        <span class="spanFuncion">fecha()</span>;
+                        <span class="spanFuncion"> hulk();</span>
                         <br>
-                        <span class="spanPhp">?&gt;</span>
+                        <span class="spanPhp"> ?&gt;</span>
                     </p>
 
+                    <h5>//Tipos de errores</h5>
+                    <p>
+                        <span class="spanVariable">Fatal Error</span><br>
+                        <span class="spanVariable">Warning</span> <br>
+                        <span class="spanVariable">Notice</span> <br>
+                        <span class="spanVariable">Syntax Error</span>
+                    </p>
 
                 </div>
             </div>
@@ -102,24 +100,26 @@
                 <div class="resultNav">🔴🟡🟢 </div>
                 <div class="resultContent">
 
-
-
                     <p>
                         <?php
 
-                        function fecha()
-                        {
-                            echo '
-                        - Día: ' . date('l') .  ' <br>
-                        - Mes: ' . date('F') . ' <br>
-                        - Año: ' . date('Y');
-                        }
+                        // Muestra los errores en pantalla    
+                        error_reporting(E_ALL);
+                        ini_set('display_errors', 1);
 
-                        fecha();
+                        hulk();
+
+                        // function areaCuadrado($lado)
+                        // {
+                        //     $resultado = pow($lado, 2);
+                        //     return $resultad;
+                        // }
+
+                        // $area = areaCuadrado(5);
+                        // echo 'El area del cuadrado es: ' . $area;
+
                         ?>
                     </p>
-
-
 
                 </div>
             </div>

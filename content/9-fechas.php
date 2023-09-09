@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Funciones</title>
+    <title>Fechas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../styles/css/styles.css">
@@ -18,9 +18,9 @@
 
     <nav class="navbar" id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://php.net/manual/es/language.functions.php">
+            <a class="navbar-brand" href="https://www.php.net/manual/es/function.date.php">
                 <!-- <img src="../media/img/logo.png" alt="Logo"> -->
-                Funciones
+                Fechas
             </a>
             <button type="button" class="btn btn-light" id="btnReturn"><a href="../index.php"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-house-fill" viewBox="0 0 16 16">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
@@ -29,11 +29,6 @@
                     </svg></i></a></button>
         </div>
     </nav>
-
-
-
-
-
 
 
     <section class="codeSection">
@@ -56,22 +51,15 @@
 
                     <h5>// Declaración</h5>
                     <p>
-                        <span class="spanPhp">&lt;?php</span>
-                        <br>
+                        <span class="spanPhp">&lt;?php</span> <br>
 
-                        <span class="spanFuncion">function fecha()</span>{ <br>
-                        echo ' <br>
-                        - Día: ' . <span class="spanFuncion">date('l')</span> . '&lt;br&gt' <br>
-                        - Mes: ' . <span class="spanFuncion">date('F')</span>. '&lt;br&gt' <br>
-                        - Año: ' . <span class="spanFuncion">date('Y')</span>; <br>
-                        } <br>
-                    </p>
+                        echo date('d/m/Y');
 
-                    <h5>// Llamada a la función</h5>
-                    <p>
-                        <span class="spanFuncion">fecha()</span>;
-                        <br>
-                        <span class="spanPhp">?&gt;</span>
+
+
+
+
+                        <span class="spanPhp"> ?&gt;</span>
                     </p>
 
 
@@ -102,24 +90,29 @@
                 <div class="resultNav">🔴🟡🟢 </div>
                 <div class="resultContent">
 
-
-
                     <p>
                         <?php
 
-                        function fecha()
-                        {
-                            echo '
-                        - Día: ' . date('l') .  ' <br>
-                        - Mes: ' . date('F') . ' <br>
-                        - Año: ' . date('Y');
-                        }
+                        $timestamp = time();
+                        echo "UNIX timestamp, segundos transcurridos desde 01.01.1970 -> $timestamp <br>";
 
-                        fecha();
+                        // fecha a partir de formato unixTS
+                        $fechaTS = 452728800;
+                        echo "Fecha a partir de formato UTS: " . $fechaTS . " -> " . (date('d/m/Y', $fechaTS) . "<br>");
+                        echo '<br>';
+                        $hoy = date('d/m/Y'); // fecha hoy
+                        echo "Fecha actual -> $hoy <br>";
+
+                        $hora = date('h:i:s A');
+                        echo "Hora actual -> $hora <br>";
+
+                        echo date('D, d \d\e F'); // \d\e - escapa
+
+// min 4:55
+
+
                         ?>
                     </p>
-
-
 
                 </div>
             </div>

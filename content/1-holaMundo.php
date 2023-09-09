@@ -56,11 +56,11 @@
                     <!-- <h5>Hola Mundo</h5> -->
 
                     <p>
-                        <span>&lt;?php</span>
+                        <span class="spanPhp">&lt;?php</span>
                         <br>
                         echo 'Hola Mundo 🌍🌍🌍';
                         <br>
-                        <span> ?&gt;</span>
+                        <span class="spanPhp"> ?&gt;</span>
                     </p>
 
                 </div>

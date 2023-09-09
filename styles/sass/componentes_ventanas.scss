@@ -39,7 +39,7 @@
 
       h5 {
         color: bootstrap.$primary;
-        font-size: 1.25rem;
+        font-size: 1.10rem;
         padding-bottom: 0.5rem;
         // text-transform: uppercase;
       }
@@ -48,9 +48,24 @@
         .spanPhp {
           color: bootstrap.$yellow;
         }
-        span{
+        .spanVariable{
           color: bootstrap.$pink-400;
         }
+        .spanFuncion{
+          color: bootstrap.$orange;
+        }
+        .spanComentario{
+          color: bootstrap.$gray-500;
+        }
+      }
+      .pindent{
+        margin-left: 2rem;
+      }
+      .pindent2{
+        margin-left: 3rem;
+      }
+      .pindent3{
+        margin-left: 4rem;
       }
       li {
         color: white;
@@ -105,7 +120,7 @@
 
       h5 {
         color: bootstrap.$primary;
-        font-size: 1.25rem;
+        font-size: 1.10rem;
         padding-bottom: 0.5rem;
         // text-transform: uppercase;
       }

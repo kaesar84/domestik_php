@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Funciones</title>
+    <title>Loops</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../styles/css/styles.css">
@@ -18,9 +18,9 @@
 
     <nav class="navbar" id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://php.net/manual/es/language.functions.php">
+            <a class="navbar-brand" href="https://www.php.net/manual/es/intro-whatis.php">
                 <!-- <img src="../media/img/logo.png" alt="Logo"> -->
-                Funciones
+                Loops
             </a>
             <button type="button" class="btn btn-light" id="btnReturn"><a href="../index.php"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-house-fill" viewBox="0 0 16 16">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
@@ -29,11 +29,6 @@
                     </svg></i></a></button>
         </div>
     </nav>
-
-
-
-
-
 
 
     <section class="codeSection">
@@ -54,26 +49,90 @@
                 <div class="codeNav">🔴🟡🟢 </div>
                 <div class="codeContent">
 
-                    <h5>// Declaración</h5>
+                    <h5>// While</h5>
                     <p>
-                        <span class="spanPhp">&lt;?php</span>
-                        <br>
+                        <span class="spanPhp">&lt;?php</span> <br>
 
-                        <span class="spanFuncion">function fecha()</span>{ <br>
-                        echo ' <br>
-                        - Día: ' . <span class="spanFuncion">date('l')</span> . '&lt;br&gt' <br>
-                        - Mes: ' . <span class="spanFuncion">date('F')</span>. '&lt;br&gt' <br>
-                        - Año: ' . <span class="spanFuncion">date('Y')</span>; <br>
-                        } <br>
+                        <span class="spanVariable"> $contador</span> = 1;<br>
                     </p>
 
-                    <h5>// Llamada a la función</h5>
-                    <p>
-                        <span class="spanFuncion">fecha()</span>;
-                        <br>
-                        <span class="spanPhp">?&gt;</span>
-                    </p>
+                    <p><span class="spanFuncion">while</span>($contador<=10){ </p>
 
+                            <p class="pindent">
+                                echo "<span class="spanVariable"> $contador</span> "; <br>
+                                <span class="spanVariable"> $contador++</span>;
+                            </p>
+
+                            <p>
+                                }; <br>
+                                <span class="spanPhp"> ?&gt;</span>
+                            </p>
+                            <br>
+                            <h5>// Do while</h5>
+
+                            <p>
+                                <span class="spanPhp">&lt;?php</span> <br>
+
+                                <span class="spanVariable"> $contador</span> = 99;<br>
+                                <br>
+                                <span class="spanFuncion">do</span> {
+                            </p>
+                            <p class="pindent">echo "<span class="spanVariable">$contador</span> - Ejecución vinculada al do while";</p>
+                            <p>} <span class="spanFuncion">while</span>(<span class="spanVariable">$contador</span>>100);<br>
+                                <span class="spanPhp"> ?&gt;</span>
+                            </p>
+
+                            <br>
+                            <h5>// For</h5>
+                            <p>
+                                <span class="spanPhp">&lt;?php</span> <br>
+                                <span class="spanVariable">$planetas</span>= ['Tierra', 'Marte', 'Saturno', 'Jupiter', 'Mercurio'];<br>
+                                <span class="spanVariable">$longitudPlanetas</span> = <span class="spanFuncion">count</span>(<span class="spanVariable">$planetas</span>); <br>
+                                <br>
+                                print_r(<span class="spanVariable">$planetas</span>); <br>
+                                echo '&lt;br&gt;'; <br>
+                                echo "Longitud del Array: <span class="spanVariable">$longitudPlanetas</span> &lt;br&gt";<br>
+                                echo '&lt;br&gt;'; <br>
+                                <br>
+                                <span class="spanFuncion">for</span>(
+                                <span class="spanVariable">$i</span>=0;
+                                <span class="spanVariable">$i</span>
+                                < <span class="spanVariable">$longitudPlanetas</span>;
+                                    <span class="spanVariable">$i</span>++
+                                    ){
+                            </p>
+                            <p class="pindent">
+                                echo 'Planeta ' .
+                                (<span class="spanVariable">$i</span> + 1) . ': ' .
+                                <span class="spanVariable">$planetas[$i]</span> . '&lt;br&gt;';
+                            </p>
+                            <p>}
+                                <span class="spanPhp">
+                                    <br>
+                                    ?&gt;</span>
+                            </p>
+
+                            <br>
+                            <h5>// For each</h5>
+                            <p>
+                                <span class="spanPhp">&lt;?php</span> <br>
+                                <span class="spanVariable">$heroes</span>= = ['Spiderman','Hulk','Lobezno','Daredevil'];<br>
+                                <br>
+                                print_r(<span class="spanVariable">$heroes</span>); <br>
+                                echo '&lt;br&gt;'; <br>
+                                <br>
+                                <span class="spanFuncion">foreach</span>(
+                                <span class="spanVariable">$heroes</span> as
+                                <span class="spanVariable">$heroe</span>
+                                ){
+                            </p>
+                            <p class="pindent"> echo "<span class="spanVariable">$heroe</span> '&lt;br&gt;';</p>
+                            <p>
+                                }
+                                <span class="spanPhp">
+                                    <br>
+                                    ?&gt;</span>
+                            </p>
 
                 </div>
             </div>
@@ -102,24 +161,62 @@
                 <div class="resultNav">🔴🟡🟢 </div>
                 <div class="resultContent">
 
-
-
+                    <h5>// While</h5>
                     <p>
                         <?php
+                        $contador = 1;
+                        while ($contador <= 10) {
 
-                        function fecha()
-                        {
-                            echo '
-                        - Día: ' . date('l') .  ' <br>
-                        - Mes: ' . date('F') . ' <br>
-                        - Año: ' . date('Y');
-                        }
+                            echo "$contador ";
+                            $contador++;
+                        };
 
-                        fecha();
+                        ?>
+                    </p>
+                    <br>
+                    <h5>// do While</h5>
+                    <p>
+                        <?php
+                        $contador = 99;
+                        do {
+                            echo "$contador - Ejecución vinculada al do while";
+                        } while ($contador > 100);
+
                         ?>
                     </p>
 
+                    <br>
+                    <h5>// For</h5>
+                    <p>
+                        <?php
 
+                        $planetas = ['Tierra', 'Marte', 'Saturno', 'Jupiter', 'Mercurio'];
+                        $longitudPlanetas = count($planetas);
+
+                        print_r($planetas);
+                        echo '<br>';
+                        echo "Longitud del Array: $longitudPlanetas <br><br>";
+
+                        for ($i = 0; $i < $longitudPlanetas; $i++) {
+                            echo 'Planeta ' . ($i + 1) . ': ' . $planetas[$i] . '<br>';
+                        }
+
+                        ?>
+                    </p>
+
+                    <br>
+                    <h5>// For each</h5>
+                    <p>
+                        <?php
+                        $heroes = ['Spiderman', 'Hulk', 'Lobezno', 'Daredevil'];
+                        print_r($heroes);
+
+                        echo '<br>';
+                        foreach ($heroes as $heroe) {
+                            echo "$heroe <br>";
+                        }
+                        ?>
+                    </p>
 
                 </div>
             </div>

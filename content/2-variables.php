@@ -18,7 +18,7 @@
 
     <nav class="navbar" id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://www.php.net/manual/es/intro-whatis.php">
+            <a class="navbar-brand" href="https://php.net/manual/es/language.variables.php">
                 <!-- <img src="../media/img/logo.png" alt="Logo"> -->
                 Variables
             </a>
@@ -59,11 +59,11 @@
                     <p>
                         <span class="spanPhp">&lt;?php</span>
                         <br>
-                        <span>$nombre</span> = 'César';
+                        <span class="spanVariable">$nombre</span> = 'César';
                         <br>
                         echo &lt;br&gt
                         <br>
-                        echo <span>$nombre</span>;
+                        echo <span class="spanVariable">$nombre</span>;
                         <br>
                         <span class="spanPhp">?&gt;</span>
                     </p>

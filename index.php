@@ -56,6 +56,11 @@
                                         <li><a href="content/2-variables.php">Variables</a></li>
                                         <li><a href="content/3-constantes.php">Constantes</a></li>
                                         <li><a href="content/4-funciones.php">Funciones</a></li>
+                                        <li><a href="content/5-funcionesParam.php">Funciones con parámetros</a></li>
+                                        <li><a href="content/6-depuradoErrores.php">Depurado de erroes</a></li>
+                                        <li><a href="content/7-tiposDatos.php">Tipos de datos</a></li>
+                                        <li><a href="content/8-loops.php">Loops</a></li>
+                                        <li><a href="content/9-fechas.php">Fechas</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -103,3 +108,5 @@
 </body>
 
 </html>
+
+<!-- echo '&lt;br&gt;'; <br> -->

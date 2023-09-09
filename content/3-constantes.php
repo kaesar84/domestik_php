@@ -57,11 +57,11 @@
                     <p>
                         <span class="spanPhp">&lt;?php</span>
                         <br>
-                        define("<span>DIAS_ANYO"</span>, 365);<br>
-                        define("<span>DIAS_ANYO_BI"</span>, 366);<br>
+                        define("<span class="spanVariable">DIAS_ANYO"</span>, 365);<br>
+                        define("<span class="spanVariable">DIAS_ANYO_BI"</span>, 366);<br>
                         <br>
-                        echo 'El valor de la constante DIAS_ANYO: ' . <span>DIAS_ANYO</span> . '&lt;br&gt'; <br>
-                        echo 'El valor de la constante DIAS_ANYO_BI: ' . <span>DIAS_ANYO_BI</span> . '&lt;br&gt';
+                        echo 'El valor de la constante DIAS_ANYO: ' . <span class="spanVariable">DIAS_ANYO</span> . '&lt;br&gt'; <br>
+                        echo 'El valor de la constante DIAS_ANYO_BI: ' . <span class="spanVariable">DIAS_ANYO_BI</span> . '&lt;br&gt';
                         <br>
                         <span class="spanPhp">?&gt;</span>
                     </p>
