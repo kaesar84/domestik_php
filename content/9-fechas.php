@@ -59,7 +59,8 @@
                         echo '&lt;br&gt;'; <br><br>
                         <span class="spanComentario">// Establecer zona horaria</span><br>
                         <span class="spanFuncion">date_default_timezone_set</span>('Europe/Madrid'); <br>
-                        echo 'Zona horaria determinada -> ' . <span class="spanFuncion">date_default_timezone_get()</span>;<br><br>
+                        echo 'Zona horaria determinada -> ' . <span class="spanFuncion">date_default_timezone_get()</span>;<br>
+                        echo '&lt;br&gt;'; <br>
                         <span class="spanComentario">// Establecer idioma local</span><br>
                         <span class="spanFuncion">setlocale</span>(LC_TIME, 'es', 'spa', 'es_ES', 'es-ES'); //idioma<br>
                         <br>
@@ -135,6 +136,7 @@
                         // Establecer zona horaria
                         date_default_timezone_set('Europe/Madrid');
                         echo 'Zona horaria determinada -> ' . date_default_timezone_get();
+                        echo '<br>';
 
                         // Establecer idioma local
                         setlocale(LC_TIME, 'es', 'spa', 'es_ES', 'es-ES'); //idioma
