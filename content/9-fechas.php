@@ -49,24 +49,59 @@
                 <div class="codeNav">🔴🟡🟢 </div>
                 <div class="codeContent">
 
-                    <h5>// Declaración</h5>
+                    <h5>// Localización</h5>
                     <p>
                         <span class="spanPhp">&lt;?php</span> <br>
 
-                        echo date('d/m/Y');
+                        <span class="spanComentario">// Zona horaria defecto</span><br>
+
+                        echo 'Zona horaria defecto -> ' . <span class="spanFuncion">date_default_timezone_get()</span>;<br>
+                        echo '&lt;br&gt;'; <br><br>
+                        <span class="spanComentario">// Establecer zona horaria</span><br>
+                        <span class="spanFuncion">date_default_timezone_set</span>('Europe/Madrid'); <br>
+                        echo 'Zona horaria determinada -> ' . <span class="spanFuncion">date_default_timezone_get()</span>;<br><br>
+                        <span class="spanComentario">// Establecer idioma local</span><br>
+                        <span class="spanFuncion">setlocale</span>(LC_TIME, 'es', 'spa', 'es_ES', 'es-ES'); //idioma<br>
+                        <br>
+
+                    </p>
+                    <h5> // Unix timestamp </h5>
+                    <p>
+
+                        <span class="spanVariable">$timestamp</span> = <span class="spanFuncion">time</span>(); <br>
+                        echo "UNIX timestamp, segundos transcurridos desde 01.01.1970 -> <span class="spanVariable">$timestamp </span>&lt;br&gt;"; <br>
+                        <br>
+                        <span class="spanComentario">// Fechas a partir de formato UTS</span><br>
+
+                        <span class="spanVariable">$fechaTS</span>= 452728800;<br>
+                        echo "Fecha a partir de formato UTS: " . <span class="spanVariable">$fechaTS</span> . " -> " . (<span class="spanFuncion">date</span>('d/m/Y', <span class="spanVariable">$fechaTS</span>) . "&lt;br&gt;"); <br>
+                        echo '&lt;br&gt;'; <br>
+                        <br>
 
 
+                        <span class="spanComentario">// Conversión de string a timestamp</span><br>
 
+                        <span class="spanVariable">$transf_a_TimeStamp</span>=<span class="spanfuncion">strtotime</span>('1984-05-07 00:00:00');<br>
+                        echo <span class="spanVariable">$transf_a_TimeStamp</span>;<br>
 
+                        <br>
+                        <span class="spanComentario">// Ejemplos de formato fechas y horas</span><br>
+                        <span class="spanVariable">$hoy</span>=<span class="spanFuncion">date</span>('d/m/Y');<br>
+                        echo "Fecha actual -> <span class="spanVariable">$hoy</span> &lt;br&gt;";<br>
+                        <br>
+                        <span class="spanVariable">$hora</span>=<span class="spanFuncion">date</span>('h:i:s A');<br>
+                        echo "Hora actual -> <span class="spanVariable">$hora</span> &lt;br&gt;";<br>
+                        <br>
+                        echo <span class="spanFuncion">date</span>('D, d \d\e F'); // \d\e - escapa caracter <br>
+
+                        echo '&lt;br&gt;'; <br>
 
                         <span class="spanPhp"> ?&gt;</span>
                     </p>
 
-
                 </div>
             </div>
         </div>
-
 
     </section>
 
@@ -93,23 +128,39 @@
                     <p>
                         <?php
 
+                        // Zona horaria defecto
+                        echo 'Zona horaria defecto -> ' . date_default_timezone_get();
+                        echo '<br>';
+
+                        // Establecer zona horaria
+                        date_default_timezone_set('Europe/Madrid');
+                        echo 'Zona horaria determinada -> ' . date_default_timezone_get();
+
+                        // Establecer idioma local
+                        setlocale(LC_TIME, 'es', 'spa', 'es_ES', 'es-ES'); //idioma
+
+                        // Unix timestamp
                         $timestamp = time();
                         echo "UNIX timestamp, segundos transcurridos desde 01.01.1970 -> $timestamp <br>";
 
-                        // fecha a partir de formato unixTS
+                        // Fechas a partir de formato UTS
                         $fechaTS = 452728800;
                         echo "Fecha a partir de formato UTS: " . $fechaTS . " -> " . (date('d/m/Y', $fechaTS) . "<br>");
                         echo '<br>';
-                        $hoy = date('d/m/Y'); // fecha hoy
+
+                        // Conversión de string a timestamp
+                        $transf_a_TimeStamp = strtotime('1984-05-07 00:00:00');
+                        echo $transf_a_TimeStamp;
+
+                        // Ejemplos de formato fechas y horas
+                        $hoy = date('d/m/Y');
                         echo "Fecha actual -> $hoy <br>";
 
                         $hora = date('h:i:s A');
                         echo "Hora actual -> $hora <br>";
 
-                        echo date('D, d \d\e F'); // \d\e - escapa
-
-// min 4:55
-
+                        echo date('D, d \d\e F'); // \d\e - escapa caracter
+                        echo '<br>';
 
                         ?>
                     </p>
@@ -127,7 +178,6 @@
 
         </div>
     </nav>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

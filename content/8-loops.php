@@ -215,6 +215,8 @@
                         foreach ($heroes as $heroe) {
                             echo "$heroe <br>";
                         }
+                        
+                        
                         ?>
                     </p>
 
