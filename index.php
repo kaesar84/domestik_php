@@ -61,6 +61,9 @@
                                         <li><a href="content/7-tiposDatos.php">Tipos de datos</a></li>
                                         <li><a href="content/8-loops.php">Loops</a></li>
                                         <li><a href="content/9-fechas.php">Fechas</a></li>
+                                        <li><a href="content/10-variablesSuperglobales.php">Variable superglobales</a></li>
+                                        <li><a href="content/11-operadores.php">Operadores</a></li>
+                                        <li><a href="content/12-estructurasControl.php">Estructuras de control</a></li>
                                     </ul>
                                 </div>
                             </div>
