@@ -1,8 +1,10 @@
 @use '../../node_modules/bootstrap/scss/bootstrap';
 @use "componentes_ventanas";
 @use "header-footer";
+@use "formularios";
 
 body{
     font-family: 'Fira Code', monospace;
     font-weight: 400;
+    box-sizing: border-box;
 }

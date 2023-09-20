@@ -1,0 +1,27 @@
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+#formulario {
+  .formularioContainer {
+    .formularioItem {
+      label {
+        width: 8rem;
+        color: white;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 0.75rem;
+        @media (max-width: 400px) {
+          padding-left: 0;
+          margin-bottom: 0;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+
+    .inputSubmit {
+      margin: 1rem 0rem 2rem 2rem;
+      @media (max-width: 400px) {
+        margin: 1.5rem 0rem 0rem 0rem;
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Estructuras de control</title>
+    <title>Formularios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../styles/css/styles.css">
@@ -18,9 +18,9 @@
 
     <nav class="navbar" id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://www.php.net/manual/es/function.date.php">
+            <a class="navbar-brand" href="https://www.php.net/manual/es/language.variables.superglobals.php">
                 <!-- <img src="../media/img/logo.png" alt="Logo"> -->
-                Estructuras de control
+                Formularios
             </a>
             <button type="button" class="btn btn-light" id="btnReturn"><a href="../index.php"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-house-fill" viewBox="0 0 16 16">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
@@ -49,79 +49,60 @@
                 <div class="codeNav">🔴🟡🟢 </div>
                 <div class="codeContent">
 
-                    <h5>// if</h5>
-                    <p>
-                        <span class="spanPhp">&lt;?php</span> <br>
-                        <span class="spanVariable">$numero</span> = 6;
-                    </p>
-                    <p>
-                        <span class="spanFuncion">if</span> (<span class="spanVariable">$numero</span> % 2 === 0) {
-                    </p>
-                    <p class="pindent"> echo "El núm <span class="spanVariable">$numero</span> es par";</p>
-                    <p> } <span class="spanFuncion">else</span> { </p>
-                    <p class="pindent"> echo "El núm <span class="spanVariable">$numero</span> es impar";</p>
-                    <p> } <br>
+                    <h5>// Formulario</h5>
 
-                        <span class="spanPhp"> ?&gt;</span>
-                    </p>
+                    <form id="formulario">
 
-                    <br>
+                        <div class="formularioContainer">
 
-                    <h5> //if else </h5>
-                    <p>
-                        <span class="spanPhp">&lt;?php</span> <br>
-                        <span class="spanVariable">$sexo</span> = 'Fem'; <br>
-                        <br>
-                        <span class="spanFuncion">if</span> (<span class="spanVariable">$sexo</span> === 'Fem') {<br>
-                    </p>
+                            <div class="formularioItem">
+                                <label for="usuario">Usuario</label>
+                                <input type="text" name="usuario" id="usuario">
+                            </div>
 
-                    <p class="pindent">echo 'Sexo Femenino'; </p>
-                    <p>
-                        } <span class="spanFuncion">elseif</span> (<span class="spanVariable">$sexo</span> === 'Masc') { </p>
-                    <p class="pindent"> echo 'Sexo Masculino'; </p>
-                    <p> } <span class="spanFuncion">else</span> { </p>
-                    <p class="pindent"> echo ('No informado'); </p>
-                    <p> } <br>
+                            <div class="formularioItem">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
 
-                        <span class="spanPhp"> ?&gt;</span>
-                    </p>
+                            <div class="formularioItem">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password">
+                            </div>
 
-                    <br>
-                    <h5> //switch </h5>
-                    <p>
-                        <span class="spanPhp">&lt;?php</span> <br>
-                        <span class="spanVariable">$animal</span> = 'Tiburón'; <br>
-                        <br>
-                        <span class="spanFuncion">switch</span> (<span class="spanVariable">$animal</span>) {<br>
-                    </p>
-                    <p class="pindent"><span class="spanFuncion">case</span><span class="spanVariable"> 'vaca'</span>:{</p>
-                    <p class="pindent2">echo 'Es un mamífero';<br>
-                        <span class="spanFuncion">break;</span><br>}
-                    </p>
 
-                    <p class="pindent"><span class="spanFuncion">case</span><span class="spanVariable"> 'águila'</span>:{</p>
-                    <p class="pindent2">echo 'Es un ave';<br>
-                        <span class="spanFuncion">break;</span><br>}
-                    </p>
+                            <div class="inputSubmit">
+                                <button type="submit" class="btn btn-secondary" name="submitBtn">Enviar</button>
+                            </div>
 
-                    <p class="pindent"><span class="spanFuncion">case</span><span class="spanVariable"> 'tiburón'</span>:{</p>
-                    <p class="pindent2">echo 'Es un pez';<br>
-                        <span class="spanFuncion">break;</span><br>}
-                    </p>
+                        </div>
 
-                    <p class="pindent"><span class="spanFuncion">default</span>:{</p>
-                    <p class="pindent2">echo 'Animal no reconocido';<br>
-                        <span class="spanFuncion">break;</span><br>}
-                    </p>
 
-                    <p> } <br>
-                        <span class="spanPhp"> ?&gt;</span>
-                    </p>
+
+                    </form>
+
+
+
+
+
+                    <!-- 
+                        <div class="inputSubmit">
+                            <button type="submit" class="btn btn-secondary" name="submitBtn">Enviar</button>
+                        </div> -->
+
+
 
 
                 </div>
+
+
+
+
+
             </div>
         </div>
+        </div>
+
 
     </section>
 
@@ -144,65 +125,11 @@
             <div class="container resutlWindow">
                 <div class="resultNav">🔴🟡🟢 </div>
                 <div class="resultContent">
-                    <h5>// if</h5>
-                    <p>
-                        <?php
-                        $numero = 6;
 
-                        if ($numero % 2 === 0) {
-                            echo "El núm $numero es par";
-                        } else {
-                            echo "El núm $numero es impar";
-                        }
-
-                        ?>
-                    </p>
-
-                    <h5>// if else</h5>
-                    <p>
-                        <?php
-                        $sexo = 'Fem';
-
-                        if ($sexo === 'Fem') {
-                            echo 'Sexo Femenino';
-                        } elseif ($sexo === 'Masc') {
-                            echo 'Sexo Masculino';
-                        } else {
-                            echo ('No informado');
-                        }
-
-                        ?>
-                    </p>
-
-                    <h5>// switch</h5>
-                    <p>
-                        <?php
-                        $animal =  strtolower('Tiburón');
-
-                        switch ($animal) {
-                            case 'vaca': {
-                                    echo 'Es un mamífero';
-                                    break;
-                                }
-
-                            case 'águila': {
-                                    echo 'Es un ave';
-                                    break;
-                                }
-
-                            case 'tiburón': {
-                                    echo 'Es un pez';
-                                    break;
-                                }
-                            default: {
-                                    echo 'Animal no reconocido';
-                                    break;
-                                }
-                        }
+                    <h5>// Formulario</h5>
 
 
-                        ?>
-                    </p>
+
 
                 </div>
             </div>
@@ -217,6 +144,7 @@
 
         </div>
     </nav>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

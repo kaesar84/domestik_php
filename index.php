@@ -72,13 +72,13 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Fundamentos 2
+                                    Formularios
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordeonIndice">
                                 <div class="accordion-body">
-                                    <li><a href="">Lorem ipsum dolor sit amet consectet</a></li>
-                                    <li><a href="">Lorem ipsum dolor sit amet consectet</a></li>
+                                <li><a href="content/13-formularios.php">Formularios</a></li>
+                                    
                                 </div>
                             </div>
                         </div>
